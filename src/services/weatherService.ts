@@ -22,7 +22,7 @@ export async function getLocation() {
 
 export async function getForecastData(location: Location) {
     const api = import.meta.env.VITE_API_KEY_FORECAST;
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${api}&q=${location.city}&days=3&aqi=yes`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${api}&q=${location.city}&days=3&aqi=yes`;
 
     try {
         const { data } = await axios(url);
