@@ -7,9 +7,10 @@ import {
 import { Location } from "../types";
 //
 export async function getLocation() {
-    const url = `https://api.ipdata.co?api-key=${
-        import.meta.env.API_KEY_LOCATION
-    }`;
+    const api = import.meta.env.VITE_API_KEY_LOCATION;
+
+    console.log(import.meta.env);
+    const url = `https://api.ipdata.co?api-key=${api}`;
     const { data } = await axios(url);
     const result = LocationAPIResponseSchema.safeParse(data);
     if (result.success) {
@@ -20,9 +21,8 @@ export async function getLocation() {
 // API DIARIA
 
 export async function getForecastData(location: Location) {
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${
-        import.meta.env.API_KEY_FORECAST
-    }&q=${location.city}&days=3&aqi=yes`;
+    const api = import.meta.env.VITE_API_KEY_FORECAST;
+    const url = `http://api.weatherapi.com/v1/forecast.json?key=${api}&q=${location.city}&days=3&aqi=yes`;
 
     try {
         const { data } = await axios(url);
