@@ -23,8 +23,8 @@ export default function SearchBar() {
                 type="text"
                 name="city"
                 id="city"
-                placeholder="Escribe una ciudad"
-                className="h-9 bg-gray-200 dark:bg-darkmode-ligther dark:border-darkmode-darker border rounded-3xl border-jagger-200 text-lg p-6 w-[500px]"
+                placeholder="Miami, Quito, Paris..."
+                className="h-9 bg-gray-200 dark:bg-darkmode-ligther dark:border-darkmode-darker border rounded-3xl border-jagger-200 text-lg p-6 w-full md:w-[500px]"
                 onChange={handleChange}
                 value={location.city}
             />

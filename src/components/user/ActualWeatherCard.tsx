@@ -57,11 +57,6 @@ export default function ActualWeatherCard() {
                             {forecast.forecast.forecastday[0].astro.sunset}
                         </p>
                     </div>
-                    <img
-                        src="/icons/ease.svg"
-                        alt="ease"
-                        className="absolute h-20 bottom-[75px] left-[75px]"
-                    />
                 </div>
             </div>
         </div>

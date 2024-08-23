@@ -2,7 +2,7 @@ import AsideButton from "./AsideButton";
 
 export default function Aside() {
     return (
-        <aside className=" py-10 bg-jagger-400 flex flex-col justify-between items-center">
+        <aside className="hidden md:flex py-10 bg-jagger-400 flex-col justify-between items-center">
             <div className="space-y-10">
                 <div className="flex flex-col items-center">
                     <img src="/icons/sun.svg" alt="sun" className="w-5 " />

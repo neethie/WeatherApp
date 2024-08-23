@@ -10,8 +10,8 @@ export default function Main() {
     const { forecastLoading } = useStore();
     return (
         <>
-            <div className="grid grid-cols-[4fr_2fr] grid-rows-[1fr_auto] gap-x-7">
-                <div className="flex justify-between items-center">
+            <div className="grid grid-cols-[4fr_2fr] grid-rows-[1fr_auto] gap-x-7 mx-10">
+                <div className="flex flex-col justify-between">
                     <Greetings />
                     <SearchBar />
                 </div>
