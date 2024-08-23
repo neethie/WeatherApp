@@ -32,7 +32,7 @@ export default function AirQuality() {
                 <div className="bg-jagger-200 w-max px-6 py-2 rounded-3xl font-semibold mb-2 dark:bg-darkmode-ligther">
                     {getQualityText}
                 </div>
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between gap-1">
                     <AirQualityIndexes index={0} />
                     <AirQualityIndexes index={1} />
                     <AirQualityIndexes index={2} />

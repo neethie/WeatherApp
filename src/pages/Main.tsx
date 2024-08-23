@@ -10,7 +10,7 @@ export default function Main() {
     const { forecastLoading } = useStore();
     return (
         <>
-            <div className="grid grid-cols-[4fr_2fr] grid-rows-[1fr_auto] gap-x-7 mx-10">
+            <div className="md:grid md:grid-cols-[3fr_1fr] grid-rows-[1fr_auto] gap-x-7">
                 <div className="flex flex-col justify-between">
                     <Greetings />
                     <SearchBar />
@@ -21,7 +21,7 @@ export default function Main() {
                         <DayInfo />
                     </div>
                 </div>
-                <div className="row-start-2">
+                <div className="md:row-start-2">
                     <AirQuality />
                 </div>
             </div>
